@@ -2,6 +2,7 @@ import subprocess
 import os
 import cv2
 import random
+import matpolib
 
 ffprobe_path = os.path.join(os.path.dirname(__file__), 'ffmpeg/ffprobe.exe')
 ffmpeg_path = os.path.join(os.path.dirname(__file__), 'ffmpeg/ffmpeg.exe')
