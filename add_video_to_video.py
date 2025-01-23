@@ -2,7 +2,6 @@ import subprocess
 import os
 import cv2
 import random
-# import play
 
 ffprobe_path = os.path.join(os.path.dirname(__file__), 'ffmpeg/ffprobe.exe')
 ffmpeg_path = os.path.join(os.path.dirname(__file__), 'ffmpeg/ffmpeg.exe')
@@ -93,4 +92,4 @@ out_video_time_bgr=os.path.join(os.path.dirname(__file__),'temp/'+str(random.ran
 out_video_rezise = resize_video_main(video_path_main,video_path_bgr,out_video_rezise, re_wi=0.1, re_he=0.1)
 out_video_time_bgr = cut_add_time_video(video_path_bgr, out_video_rezise, out_video_time_bgr)
 add_video_to_video(out_video_rezise, out_video_time_bgr, output_path, time_blend=2)
-# play.play_video(output_path)
+
